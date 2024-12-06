@@ -17,11 +17,9 @@ class UsuarioController extends Controller
             'usuarios' => $usuarios
         ], 200);
     }
-
     public function store(StoreUsuarioRequest $request)
     {
         $data = $request->all();
-        // Hashear la contraseña antes de guardar
         //$data['contrasena'] = Hash::make($data['contrasena']);
 
         $usuario = Usuario::create($data);
