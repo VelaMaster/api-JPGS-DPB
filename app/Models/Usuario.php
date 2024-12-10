@@ -12,5 +12,6 @@ class Usuario extends Model
         'usuario',
         'correo',
         'contrasena',
+        'imagen',
     ];
 }
